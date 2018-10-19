@@ -247,8 +247,6 @@ list-style-type: none;
 }
 ul.galerie li a img{
 float:left;
-width:100px;
-height:auto;
 }
 
 ul.galerie li a:hover img{
