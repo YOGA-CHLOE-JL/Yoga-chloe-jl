@@ -2,6 +2,7 @@
 
 body{
     font-family: "Open Sans", sans-serif;
+    font-size: 84%;
     /*margin: 0px;
     padding: 0px;*/
     background-image: url("../images/BG_left-1.png"),url("../images/BG_right-1.png");
@@ -14,6 +15,7 @@ body{
 
 
 #menu, #menu ul{
+    font-weight: bold;
 padding:0;
 margin:0;
 list-style:none;
@@ -198,7 +200,7 @@ footer p{
     margin-top: 8%;
     background-color: #eeeeee;
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.9em;
 
 }
 
