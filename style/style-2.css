@@ -192,12 +192,38 @@ color:#000;
     display: inline-block;
 }
 
+.container_cat ul li{
+    list-style-type: none;
+}
+
+.container_adherent{
+    width: 70%;
+    margin: auto;
+}
+
+.container_adherent form {
+/*float: left;*/ 
+text-align: justify;    
+
+}
+
+.container_adherent fieldset{
+width: 50%; 
+margin:auto;    
+
+}
+
+.container_adherent input, select#demande, select#inscr {
+    float: right;
+}
+
+textarea#commentaire{
+    width: 98%;
+    
+}
 footer p{
     width: 70%;
-   /* margin: auto;*/
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8%;
+    margin: auto;
     background-color: #eeeeee;
     text-align: center;
     font-size: 0.9em;
@@ -206,7 +232,7 @@ footer p{
 
 .container_cat iframe{
     margin: auto;
-    width: 65%;
+    
 }
 
 .container_cat figure{
@@ -230,28 +256,19 @@ figure figcaption {
 
 .container_prod img{
     float:left;
-}
-
-
-#diaporama{
-float:left;
-padding:20px;
-margin: auto;
     
 }
 
-ul.galerie  li{
-float:left;
-margin:0, 10px;
-padding: 10px;
-border: 1px solid #ddd;
-list-style-type: none;	
-}
-ul.galerie li a img{
-float:left;
+
+
+#diaporama {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-ul.galerie li a:hover img{
+
+#diaporama a:hover img{
 /* grossissement */
 -webkit-transform: scale(1.5) rotate(-10deg);
 -moz-transform: scale(1.5) rotate(-10deg);
