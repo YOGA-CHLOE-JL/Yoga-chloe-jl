@@ -45,15 +45,77 @@
       <div class="container_cat">
 
       	<h1>Planning</h1>
+        
+        <p id="lien_inscript">Inscrivez-vous aux Stages et Ateliers <a href="#" onclick="document.getElementById('light').style.display='block';
+          document.getElementById('box').style.display='block'; document.getElementById('plann').style.float='left';document.getElementById('light').style.float='right'; document.getElementById('lien_inscript').style.display='none'">ici</a> 
+      </p>
           
-    	<p><a href="adherents.html"><strong>Inscrivez-vous aux Stages et Ateliers </br>ici.</strong></p>
-    
+      	<iframe  id="plann" src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=450&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=phl7dlktqe6s9m7805t437o20s%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=Europe%2FParis" style="border-width:0" width="650" height="450" frameborder="0" scrolling="no"></iframe>
 
-     
-      	<iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=450&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=phl7dlktqe6s9m7805t437o20s%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=Europe%2FParis" style="border-width:0" width="650" height="450" frameborder="0" scrolling="no"></iframe>
-    
+
+      
+
+
+      
+
+    <!--    <p><a href="adherents.html"><strong>Inscrivez-vous aux Stages et Ateliers </br>ici.</strong></p>-->
+      <div id="light"></div>
+       <div id="box">
+        <!-- <div id="boxheader">
+            Titre pour le contenu (image, formulaire ou autre)
+         <span id="boxclose" onclick="document.getElementById('box').style.display='none';
+         document.getElementById('light').style.display='none'"> </span>
+        </div> -->
+        <div id="boxcontent">
+       <fieldset id="connect">
+    <legend> Identifiants de Connexion </legend>
+    <form method="post" action="#">
+      <label for="pseudo">Entrer votre pseudo :</label>
+      <input type="text" name="pseudo" id="pseudo" required/><br><br/>
+      <label for="mdp">Entrer votre MDP:</label>
+      <input type="password" name="mdp" id="mdp" required/></br><br/>
+      <input type="submit" value="Envoyer" onclick="document.getElementById('connect').style.display='none'; document.getElementById('adher').style.display='none'; document.getElementById('stage').style.display='block'"/>
+   </form>
+   </fieldset>
+</br>
+    <fieldset id="adher">
+        <legend> Nouvel Adhérent : </legend>
+          <form method="post" action="#">
+            <label for="nom"> Nom: </label>
+            <input type="text" name="nom" id="nom"/></br><br/>
+            <label for="prenom"> Prénom: </label>
+            <input type="text" name="prenom" id="prenom"/></br><br/>
+            <label for="email">Entrer votre Email</label>
+            <input type="text" name="email" id="email"required="required"/><br></br>
+            <label for="pseudo">Créer votre pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo"required="required"/><br></br>
+            <label for="mdp"> Mot de Passe: </label><input type="password" name="mdp" id="mdp"required="required"/></br></br>
+            <input type="submit" value="Envoyer" onclick="document.getElementById('connect').style.display='none'; document.getElementById('adher').style.display='none'; document.getElementById('stage').style.display='block'"/>
+          </form>
+    </fieldset>
+    <fieldset id="stage">
+          <legend> Inscription stage : </legend>
+            <form method="post" action="#">
+             
+              <label for="inscr">Vous souhaitez participer à : </label>
+              <select name="inscr" id="inscr"/>
+                <option value="stage">un  Stage</option>
+                <option value="atelier">un Atelier</option>
+              </select>
+                <br/></br>
+              <label for="date">Entrer la Date souhaitée</label>
+              
+               <input type="date" name="date" id="date"/>
+    		</form>     
+    	</fieldset>
+
+
+        </div>
       </div>
-      <br/><br/>
+      </div>
+
+           <br/><br/>
+
     <footer>
     
     <p>Contact: <a href="mailto:yoga@rwf.fr">yoga@rwf.fr</a>&nbsp;&nbsp;&nbsp;&nbsp;   Tel: 0123456789 &#169;RWF 2018</p>
