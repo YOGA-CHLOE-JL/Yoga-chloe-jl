@@ -230,6 +230,10 @@ footer p{
 
 }
 
+footer {          /*mis en place pour page planning pour éviter la remontée du footer sous les float*/
+    clear: both;
+}
+
 .container_cat iframe{
     margin: auto;
     
@@ -288,4 +292,17 @@ box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 -o-transition: -o-transform 0.2s ease-in-out;
 transition: transform 0.2s ease-in-out;
 
+}
+
+#box {
+    display: none;
+}
+
+#light{
+    display: none;
+    
+}
+
+#stage {
+    display:none;
 }
