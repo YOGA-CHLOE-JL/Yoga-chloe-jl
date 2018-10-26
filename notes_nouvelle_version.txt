@@ -1,0 +1,14 @@
+﻿########## 
+Pour la version 0.1 ou 1.0
+##########
+
+créer une nouvelle branche sous   TEMPS 15'
+
+Créer un dossier assets, pour y regrouper les dossiers d'accessoire img css et js, modifier les liens dans pages concernées TEMPS 3H
+
+passer la page de base en flexbox TEMPS 6H
+
+à voir: prévoir d'intégrer les articles du blog dans le site de façon automatique
+
+développer la page stage: programme video
+
