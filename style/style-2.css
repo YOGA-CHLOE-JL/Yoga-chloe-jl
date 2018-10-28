@@ -232,6 +232,7 @@ footer p{
 
 footer {          /*mis en place pour page planning pour éviter la remontée du footer sous les float*/
     clear: both;
+    margin-top: 5%;
 }
 
 .container_cat iframe{
@@ -294,7 +295,9 @@ transition: transform 0.2s ease-in-out;
 
 }
 
-#box {
+/*GESTION DES CONTENUS DE SAISIE DANS LA PAGE PLANNING */
+
+#boxcontent {
     display: none;
 }
 
@@ -306,3 +309,16 @@ transition: transform 0.2s ease-in-out;
 #stage {
     display:none;
 }
+
+#plann {
+    margin-right: 5%;
+}
+
+#connect{
+    margin-top: 7%;
+}
+
+#stage {
+    margin-top: 12%;
+}
+
