@@ -5,9 +5,11 @@ body{
     font-size: 84%;
     /*margin: 0px;
     padding: 0px;*/
-    background-image: url("../images/BG_left-1.png"),url("../images/BG_right-1.png");
+    background-image: url("../images/BG_left-1.png") ,url("../images/BG_right-1.png"); 
     background-repeat: no-repeat;
     background-position: top left, top right;
+    
+	background-attachment: fixed;
     
 
 
@@ -321,4 +323,147 @@ transition: transform 0.2s ease-in-out;
 #stage {
     margin-top: 12%;
 }
+
+/* Pour slider en page d'accueil*/
+
+#slideshow {
+	position: relative;
+	width: 70%;
+    max-width: 1000px;
+	height: auto;
+	padding: 15px;
+	margin: 0 auto 2em;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/* CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+/* avanced box-shadow : http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow */
+
+
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+	
+	z-index: -10;
+
+}
+#slideshow:before {
+	left:0;
+	transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+	-ms-transform: rotate(-4deg);
+	-o-transform: rotate(-4deg);
+
+}
+#slideshow:after {
+	right:0;
+	transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+
+}
+
+div#slider {
+	overflow: hidden;
+    position: relative;
+	/*width: 70%;
+    max-width: 1000px;
+	height: auto;*/
+    margin: auto;
+           
+}
+
+div#slider figure {
+	position: relative;
+
+	width: 500%;
+	margin: 0;
+	padding: 0;
+	font-size: 0px;  /*supprim tout l'espace autour de l'element figure*/
+	animation: slidein 30S infinite;
+	-webkit-animation: 30S infinite slidein;
+	-moz-animation: 30S infinite slidein;
+	-ms-animation: 30S infinite slidein;
+	-o-animation: 30S infinite slidein;    
+}
+div#slider figure img {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+
+
+@keyframes slidein {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+@-webkit-keyframes slidein {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+
+@media screen and (max-width: 760px){
+    
+    #top_page_left img{
+        display: none;
+    }
+    #top_page_right{
+        display: none;
+    }
+    .container-menu{
+        width: 100%;
+    }
+    body{
+        background-image: none;
+        }
+    
+}
+    
+/********************/
+/* MEDIA QUERIES END*/
+/********************/
+
 
