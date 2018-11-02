@@ -17,7 +17,7 @@ body{
 
 
 #menu, #menu ul{
-    font-weight: bold;
+font-weight: bold;
 padding:0;
 margin:0;
 list-style:none;
@@ -55,30 +55,30 @@ max-height:15em;
 /* background des liens menus */
 /*
 #menu li:first-child{
-background-color: #98C681;
+background-color: #8ACA6B;
 background-image:-webkit-linear-gradient(top, #98C681 0%, #6fd13e 100%);
 background-image:linear-gradient(to bottom, #98C681 0%, #6fd13e 100%);
 }
 #menu li:nth-child(2){
-background-color: #98C681;
+background-color: #8ACA6B;
 background-image:-webkit-linear-gradient(top, #98C681 0%, #6fd13e 100%);
 background-image:linear-gradient(to bottom, #98C681 0%, #6fd13e 100%);
 }
 
 #menu li:nth-child(3){
-background-color: #98C681;
+background-color: #8ACA6B;
 background-image:-webkit-linear-gradient(top, #98C681 0%, #6fd13e 100%);
 background-image:linear-gradient(to bottom, #98C681 0%, #6fd13e 100%);
 }
 
 */
 #menu li:nth-child(n){
-background-color: #98C681;
-background-image:-webkit-linear-gradient(top, #98C681 0%, #6fd13e 100%);
-background-image:linear-gradient(to bottom, #98C681 0%, #6fd13e 100%);
+background-color: #6fd13e;
+/*background-image:-webkit-linear-gradient(top, #98C681 0%, #6fd13e 100%);
+background-image:linear-gradient(to bottom, #98C681 0%, #6fd13e 100%);*/
 }
 
-#/*menu li:last-child{
+/*menu li:last-child{
 background-color: #98C681;
 background-image:-webkit-linear-gradient(top, #98C681 0%, #6fd13e 100%);
 background-image:linear-gradient(to bottom, #98C681 0%, #6fd13e 100%);
@@ -90,7 +90,7 @@ background:#6fd13e;
 }
 */
 #menu li:nth-child(n) li{
-background:#6fd13e;
+background:#98C681;
 }
 /*
 #menu li:nth-child(3) li{
@@ -129,6 +129,7 @@ display:block;
 padding: 1em 3em;
 color:#fff;
 font-family:arial;
+width:auto;
 }
 
 
@@ -174,10 +175,8 @@ color:#000;
 
 .container-menu {
     width: 70%;
-    margin: auto;
-    background-color: #eeeeee;
-
-    
+    margin: auto; 
+    background-color:#6fd13e;   
 }
 
 .container h1{
@@ -439,6 +438,10 @@ div#slider figure img {
 100% { left: -400%; }
 }
 
+#checkbox1,
+.toggle {
+  display: none;
+}
 
 /*****************/
 /* MEDIA QUERIES */
@@ -459,7 +462,72 @@ div#slider figure img {
     body{
         background-image: none;
         }
-    
+    /*-------HAMBURGER RESP---------------*/
+    .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;/*centrage traits ds box grise*/
+    cursor: pointer;
+    width: 100%;
+    height: 40px;/*hauteur boite grise*/
+    font-size: 30px;
+    color: #595959; /* 3 traits noirs*/ 
+    background: #dbdbdb;/* fond gris hamburger*/
+    transition: all .1s linear;
+  }
+  .toggle:hover {
+    background: #cecece;
+  }
+   #checkbox1:checked + label .demo li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox1:checked + label .demo {
+    height: 70%;
+  }
+  .menu {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+  }
+  .menu li {
+    display: flex;
+    /* magic */
+    align-self: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li a {
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+}
+
+.demo {
+  background: #7bce51;
+}
+
+.demo li a {
+  color: #fff;
+}
+
+.demo li a:hover {
+  background: #98C681;
+}
+
 }
     
 /********************/
