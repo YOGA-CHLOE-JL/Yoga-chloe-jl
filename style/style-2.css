@@ -458,9 +458,11 @@ div#slider figure img {
     }
     .container-menu{
         width: 100%;
+		
     }
     body{
-        background-image: none;
+        /*background-image: none;*/
+		 background-size: calc(12vw - ((760px - 100vw) * 2 / 760)*100) 100vh;
         }
     /*-------HAMBURGER RESP---------------*/
     .toggle {
@@ -499,7 +501,8 @@ div#slider figure img {
     align-items: center;
     height: 0px;
     transition: height .3s linear;
-  }
+	
+}
   .menu li {
     display: flex;
     /* magic */
