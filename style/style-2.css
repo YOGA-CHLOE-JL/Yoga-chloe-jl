@@ -126,7 +126,7 @@ background:#98C681;
 #menu a{
 text-decoration: none;
 display:block;
-padding: 1em 3em;
+padding: 1em 1.6vw;
 color:#fff;
 font-family:arial;
 width:auto;
@@ -460,10 +460,12 @@ div#slider figure img {
         width: 100%;
 		
     }
+    
     body{
         /*background-image: none;*/
-		 background-size: calc(12vw - ((760px - 100vw) * 2 / 760)*100) 100vh;
-        }
+		 background-size: calc(20vw - ((760px - 100vw) * 2.4 / 760)*100) 100vh;
+    }
+
     /*-------HAMBURGER RESP---------------*/
     .toggle {
     clear: both;
