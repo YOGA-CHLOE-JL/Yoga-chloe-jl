@@ -153,23 +153,28 @@ color:#000;
     margin: auto; 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 
 
 #top_page_title{
     margin: auto;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 #top_page_right{
     display: flex;
-    flex-direction: column-reverse;
+   /*flex-direction: column-reverse;*/
     align-items: center;
 }
 
+#top_page_left img{
+	max-width: 7vw;
+}
+
 .container{
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 
