@@ -463,7 +463,7 @@ div#slider figure img {
     
     body{
         /*background-image: none;*/
-		 background-size: calc(20vw - ((760px - 100vw) * 2.4 / 760)*100) 100vh;
+		background-size: calc(20vw - ((760px - 100vw) * 2.4 / 760)*100) 100vh;
     }
 
     /*-------HAMBURGER RESP---------------*/
@@ -522,7 +522,7 @@ div#slider figure img {
 }
 
 .demo {
-  background: #7bce51;
+  background: #6fd13e;
 }
 
 .demo li a {
@@ -531,6 +531,8 @@ div#slider figure img {
 
 .demo li a:hover {
   background: #98C681;
+}
+.sous_menu{display:none;
 }
 
 }
