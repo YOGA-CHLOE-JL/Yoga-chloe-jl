@@ -1,4 +1,6 @@
 /** évite les marges automatique suivant le navigateur */
+@import url('https://fonts.googleapis.com/css?family=Courgette|Marck+Script|Architects+Daughter');
+
 
 body{
     font-family: "Open Sans", sans-serif;
@@ -35,7 +37,7 @@ border-radius:0;
 border-radius:0;
 }
 #menu ul li:last-child{
-border-radius:0 0 1em 1em;
+border-radius:0 0 0 0;
 }
 #menu ul{
 position:absolute;
@@ -151,15 +153,17 @@ color:#000;
     width: 70%;
     margin: auto; 
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     
 }
 
 
 #top_page_title{
-    margin: auto;
-    font-size: 3vw;
+    margin-left: 2%;
+    /*margin: auto;
+*/    font-size: 3vw;
+    font-family: 'Architects Daughter', cursive;
 }
 
 #top_page_right{
@@ -170,6 +174,7 @@ color:#000;
 
 #top_page_left img{
 	max-width: 7vw;
+    
 }
 
 .container{
@@ -185,6 +190,8 @@ color:#000;
 
 .container h1{
     text-align: center;
+    font-family: 'Courgette', cursive;
+    
 } 
 
 .container_cat {
@@ -336,7 +343,7 @@ transition: transform 0.2s ease-in-out;
 
 #slideshow {
 	position: relative;
-	width: 60vw;
+	width: 51vw;
     max-width: 1000px;
 	height: auto;
 	padding: 15px;
@@ -520,10 +527,16 @@ div#slider figure img {
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
+@media screen and (max-width: 480px){
+    body{
+         background-image: none;
+    }
+}
 
 
 @media screen and (max-width: 760px){
     
+        
     #top_page_left img{
         display: none;
     }
@@ -537,7 +550,7 @@ div#slider figure img {
     
     body{
         /*background-image: none;*/
-		background-size: calc(20vw - ((760px - 100vw) * 2.4 / 760)*100) 100vh;
+		background-position-x: calc(100vw*3/8 - 285px), calc(66.5vw + 102px);
     }
 
     /*-------HAMBURGER RESP---------------*/
@@ -608,7 +621,7 @@ div#slider figure img {
 }
 .sous_menu{display:none;
 }
-
+    
 }
     
 /********************/
@@ -620,7 +633,8 @@ div#slider figure img {
 /*****************************/
 
 .baricon_container {
-    top: 15%;
+    top: 50%;
+    right: 15%;
     position:fixed;
     width: 1%;
     display: block;
@@ -646,7 +660,7 @@ div#slider figure img {
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-    float:left;
+  float:left;
 }
 
 /* Style the social media icons with color, if you want */
