@@ -162,15 +162,17 @@ color:#000;
 #top_page_title{
     margin-left: 2%;
     /*margin: auto;
-*/    font-size: 3vw;
+*/    font-size: 2em;
     font-family: 'Architects Daughter', cursive;
 }
 
+/*
 #top_page_right{
     display: flex;
-   /*flex-direction: column-reverse;*/
+   flex-direction: column-reverse;
     align-items: center;
 }
+*/
 
 #top_page_left img{
 	max-width: 7vw;
@@ -247,10 +249,6 @@ footer {          /*mis en place pour page planning pour éviter la remontée du
     margin-top: 5%;
 }
 
-.container_cat iframe{
-    margin: auto;
-    
-}
 
 .container_cat figure{
     display: inline-block;
@@ -262,7 +260,7 @@ figure img{
 
 figure figcaption {
     text-align: center;
-}
+}file:///C:/Users/rwf/Desktop/debug%20yoga/images/sens.png
 
 .container_prod {
      width: 70%;
@@ -275,8 +273,48 @@ figure figcaption {
     float:left;
     
 }
+/*****************************************/
+/***** REDUCTION DE TAILLE DES MANDALAS***/
+/*****************************************/
 
+ img.mandala {
+    width: 35%;
+    max-width: 250px;
+    min-width: 100px;
+}  
 
+/******************************************/
+
+/******************************************/
+/** IFRAME EN RESPONSIVE ******************/
+/******************************************/
+
+.container_cat iframe{
+    margin: auto;
+}
+
+.embal_iframe {
+    position: relative;
+    margin-bottom: auto;
+    padding-top: 100%;  /* oblige le iframe à prendre 100% de la boite https://www.zendevs.xyz/faire-iframe-responsive-css/ */
+    flex:1 0 50%;
+    max-width: 50%
+}
+.embal_iframe iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+}
+
+#plannbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+/******************************************/
 
 #diaporama {
     display: flex;
@@ -320,23 +358,29 @@ transition: transform 0.2s ease-in-out;
 }
 #light{
     display: none;
-    
 }
+
+
+#boxident {
+    display:none;
+   /*  flex: 0 1 30%; */
+}    
+    
 
 #stage {
     display:none;
+    
 }
 
-#plann {
-    margin-right: 5%;
-}
 
 #connect{
     margin-top: 7%;
+   
 }
 
 #stage {
     margin-top: 12%;
+    
 }
 
 /* Pour slider en page d'accueil*/
@@ -531,15 +575,31 @@ div#slider figure img {
     body{
          background-image: none;
     }
+
+    img.mandala {
+    display: none;
+    }  
+
 }
 
 
 @media screen and (max-width: 760px){
     
-        
-    #top_page_left img{
-        display: none;
+     #plannbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     }
+
+    .embal_iframe {
+    position: relative;
+    margin-top: 2%;
+    padding-top: 100%;  /* oblige le iframe à prendre 100% de la boite https://www.zendevs.xyz/faire-iframe-responsive-css/ */
+    flex:1 0 50%;
+    max-width: 100%
+}
+   
+   
     #top_page_right{
         display: none;
     }
