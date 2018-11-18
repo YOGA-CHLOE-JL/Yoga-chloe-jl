@@ -11,9 +11,6 @@ body{
     background-repeat: no-repeat;
     background-position: top left, top right;
 	background-attachment: fixed;
-    
-
-
 }
 
 
@@ -148,6 +145,10 @@ color:#000;
 #menu .actif{
     color: black;
 }
+/*****************************************/
+/************ TOP PAGE *******************/
+/*****************************************/
+
 
 .top-page{
     width: 70%;
@@ -166,18 +167,13 @@ color:#000;
     font-family: 'Architects Daughter', cursive;
 }
 
-/*
-#top_page_right{
-    display: flex;
-   flex-direction: column-reverse;
-    align-items: center;
-}
-*/
 
 #top_page_left img{
 	max-width: 7vw;
-    
+
 }
+
+/*********************************/
 
 .container{
     margin-top: 1%;
@@ -260,7 +256,7 @@ figure img{
 
 figure figcaption {
     text-align: center;
-}file:///C:/Users/rwf/Desktop/debug%20yoga/images/sens.png
+}
 
 .container_prod {
      width: 70%;
@@ -269,8 +265,11 @@ figure figcaption {
     
 }
 
-.container_prod img{
+.container_prod img{           /* taille des images sur page Alimentation et hygiène*/
     float:left;
+    width:95%;
+    max-width: 350px;
+    margin-right: 1%;
     
 }
 /*****************************************/
@@ -344,10 +343,21 @@ box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 transition: transform 0.2s ease-in-out;
 
 }
-#vid_post{ text-align: center;
 
+/********************************************************/
+/************* VIDEO POSITIONS LARGEUR ******************/
+/********************************************************/ 
+
+#vid_post{
+ margin: auto;
+ width:50%;
+ max-width:340px;
 }
+
+
+/*******************************************************/
 /*GESTION DES CONTENUS DE SAISIE DANS LA PAGE PLANNING */
+/*******************************************************/
 
 #boxcontent {
     display: none;
@@ -380,10 +390,19 @@ transition: transform 0.2s ease-in-out;
 
 #stage {
     margin-top: 12%;
-    
+   
 }
 
+.embal_iframe .bubble {
+    width:100%;
+    max-width: 400px;
+}
+
+/*******************************************/
+
+/*********************************/
 /* Pour slider en page d'accueil*/
+/********************************/
 
 #slideshow {
 	position: relative;
@@ -498,10 +517,7 @@ div#slider figure img {
 100% { left: -400%; }
 }
 
-#checkbox1,
-.toggle {
-  display: none;
-}
+
 #galerie{
     width:70%;
     height:100px;
@@ -568,6 +584,17 @@ div#slider figure img {
     99.99%{margin-left:-980px;}
 }
 
+/*****************************************/
+/********* FIN SLIDER ********************/
+/*****************************************/
+
+#checkbox1,
+.toggle {
+  display: none;
+}
+
+
+
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
@@ -584,6 +611,16 @@ div#slider figure img {
 
 
 @media screen and (max-width: 760px){
+    
+    .container_prod img{
+        float:none;
+    }
+
+    #vid_post{
+     margin: auto;
+     width:50%;
+     min-width:340px;
+    }
     
      #plannbox {
     display: flex;
